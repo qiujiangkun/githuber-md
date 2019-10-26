@@ -6,12 +6,12 @@
  * @author Terry Lin
  * @link https://terryl.in/
  *
- * @package Future
+ * @package Githuber
  * @since 1.12.0
  * @version 1.12.0
  */
 
-namespace Future\Module;
+namespace Githuber\Module;
 
 class MardkwonForComments extends ModuleAbstract {
 

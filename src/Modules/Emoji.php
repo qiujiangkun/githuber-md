@@ -6,12 +6,12 @@
  * @author Terry Lin
  * @link https://terryl.in/
  *
- * @package Future
+ * @package Githuber
  * @since 1.0.0
  * @version 1.0.0
  */
 
-namespace Future\Module;
+namespace Githuber\Module;
 
 class Emoji extends ModuleAbstract {
 

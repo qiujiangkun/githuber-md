@@ -8,12 +8,12 @@
  * @author Terry Lin
  * @link https://terryl.in/
  *
- * @package Future
+ * @package Githuber
  * @since 1.0.0
  * @version 1.0.0
  */
 
-namespace Future\Controller;
+namespace Githuber\Controller;
 
 abstract class ControllerAbstract {
 
@@ -36,28 +36,28 @@ abstract class ControllerAbstract {
 	 *
 	 * @var string
 	 */
-	public $future_plugin_url;
+	public $githuber_plugin_url;
 
 	/**
 	 * The plugin directory.
 	 *
 	 * @var string
 	 */
-	public $future_plugin_dir;
+	public $githuber_plugin_dir;
 
 	/**
 	 * The plugin loader's path.
 	 *
 	 * @var string
 	 */
-	public $future_plugin_path;
+	public $githuber_plugin_path;
 
 	/**
 	 * Plugin's name.
 	 *
 	 * @var string
 	 */
-	public $future_plugin_name;
+	public $githuber_plugin_name;
 
 	/**
 	 * Constructer.
@@ -68,11 +68,11 @@ abstract class ControllerAbstract {
 		/**
 		 * Basic plugin information. Mapping from the Constant in the plugin loader script.
 		 */
-		$this->future_plugin_name = FUTURE_PLUGIN_NAME;
-		$this->future_plugin_url  = FUTURE_PLUGIN_URL;
-		$this->future_plugin_dir  = FUTURE_PLUGIN_DIR;
-		$this->future_plugin_path = FUTURE_PLUGIN_PATH;
-		$this->version              = FUTURE_PLUGIN_VERSION;
+		$this->githuber_plugin_name = GITHUBER_PLUGIN_NAME;
+		$this->githuber_plugin_url  = GITHUBER_PLUGIN_URL;
+		$this->githuber_plugin_dir  = GITHUBER_PLUGIN_DIR;
+		$this->githuber_plugin_path = GITHUBER_PLUGIN_PATH;
+		$this->version              = GITHUBER_PLUGIN_VERSION;
 	}
 
 	/**

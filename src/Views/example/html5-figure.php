@@ -1,12 +1,12 @@
 <?php 
-if ( ! defined('FUTURE_PLUGIN_NAME') ) die;
+if ( ! defined('GITHUBER_PLUGIN_NAME') ) die; 
 /**
  * View for Controller/Setting
  *
  * @author Terry Lin
  * @link https://terryl.in/
  *
- * @package Future
+ * @package Githuber
  * @since 1.2.0
  * @version 1.3.0
  */
@@ -19,7 +19,7 @@ if ( ! defined('FUTURE_PLUGIN_NAME') ) die;
 </pre>
 <?php
 
-echo __( 'The Markdown text above will be transformed to:', 'wp-future-md' );
+echo __( 'The Markdown text above will be transformed to:', 'wp-githuber-md' );
 
 ?><br />
 

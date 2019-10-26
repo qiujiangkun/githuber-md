@@ -5,12 +5,12 @@
  * @author Terry Lin
  * @link https://terryl.in/
  *
- * @package Future
+ * @package Githuber
  * @since 1.6.2
  * @version 1.6.2
  */
 
-namespace Future\Controller;
+namespace Githuber\Controller;
 
 class CustomMediaLibrary extends ControllerAbstract {
 
@@ -58,11 +58,11 @@ class CustomMediaLibrary extends ControllerAbstract {
      */
     function attachment_fields_to_edit( $form_fields, $post = null ) {
  
-        $form_fields['future_image_insert'] = array(
+        $form_fields['githuber_image_insert'] = array(
             'value' => 'markdown',
-            'label' => __( 'Code type', 'wp-future-md' ),
+            'label' => __( 'Code type', 'wp-githuber-md' ),
             'input' => 'html',
-            'html'  => future_load_view( 'metabox/custom-media-library' ),
+            'html'  => githuber_load_view( 'metabox/custom-media-library' ),
         );
 
         return $form_fields;

@@ -6,12 +6,12 @@
  * @author Terry Lin
  * @link https://terryl.in/
  *
- * @package Future
+ * @package Githuber
  * @since 1.4.0
  * @version 1.4.0
  */
 
-namespace Future\Module;
+namespace Githuber\Module;
 
 class Mermaid extends ModuleAbstract {
 
@@ -32,7 +32,7 @@ class Mermaid extends ModuleAbstract {
 	/**
 	 * Constants.
 	 */
-	const MD_POST_META_MERMAID = '_is_future_mermaid';
+	const MD_POST_META_MERMAID = '_is_githuber_mermaid';
 
 	/**
 	 * Initialize.
@@ -60,7 +60,7 @@ class Mermaid extends ModuleAbstract {
 	 */
 	public function front_enqueue_scripts() {
 		if ( $this->is_module_should_be_loaded( self::MD_POST_META_MERMAID ) ) {
-			$option = future_get_option( 'mermaid_src', 'future_modules' );
+			$option = githuber_get_option( 'mermaid_src', 'githuber_modules' );
 
 			switch ( $option ) {
                 case 'cloudflare':
@@ -72,7 +72,7 @@ class Mermaid extends ModuleAbstract {
 					break;
 
 				default:
-					$script_url = $this->future_plugin_url . 'assets/vendor/mermaid/mermaid.min.js';
+					$script_url = $this->githuber_plugin_url . 'assets/vendor/mermaid/mermaid.min.js';
 					break;
 			} 
 
